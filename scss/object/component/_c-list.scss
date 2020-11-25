@@ -1,0 +1,14 @@
+@charset "utf-8";
+.c-menu-list {
+    list-style: none;
+}
+.c-menu-items {
+    padding-bottom: 3rem;
+    &:last-child{
+        padding-bottom: 0;
+    }
+    & a {
+        color: #707070;
+        font-size: 2rem;
+    }    
+}
