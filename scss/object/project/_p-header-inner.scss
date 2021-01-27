@@ -3,13 +3,29 @@
     text-align: right;
     color: #707070;
     padding: 1.4rem 1.6rem 3.8rem 2.4rem;
+    @include pc {
+        padding: 6.7rem 3rem 6.7rem 6.5rem;
+    }
+    &__menu {
+        @include pc {
+            display: none;
+        }
+    }
     &__block {
         display: flex;
         flex-direction: column;
         text-align: center;
+        @include pc {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
     &__title {
         margin-bottom: 3.8rem;
+        @include pc {
+            margin: 0;
+        }
     }
     &__search-container {
         display: flex;

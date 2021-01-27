@@ -3,15 +3,28 @@
     padding: 2.5rem 1.7rem 0 0;
     text-align: right;
     color: #707070;
+    @include pc {
+        padding-right: 4.6%;
+    }
+    &__menu{
+        @include pc {
+            margin: -16.7rem 0 9rem;
+        }
+    }
     &__menu-wrapper {
         text-align: left;
         margin: 19.2rem .5rem 0 4.6rem;
-        padding-bottom: 54rem;
+        @include pc {
+            margin-left: 13.1%;
+        }
     }
     &__menu-category {
         padding-bottom: 4.4rem;
     }
     &__menu-list {
         padding: 0 0 5rem 2rem;
+        @include pc {
+            padding-left: 6.7%; 
+        }
     }
 }

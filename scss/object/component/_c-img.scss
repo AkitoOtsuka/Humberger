@@ -1,4 +1,14 @@
 @charset "utf-8";
-.c-hero {
+.c-top {
     position: relative;
+}
+.c-top-img {
+    object-fit: cover;
+    height: 285px;
+    @include pc {
+        height: 530px;
+    }
+}
+.c-service-img {
+    height: auto;
 }

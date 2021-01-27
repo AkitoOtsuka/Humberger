@@ -1,6 +1,119 @@
 @charset "utf-8";
-.p-main-inner__hero-title {
-    top: 50%;
-    left: 25px;
-    transform: translate(0, -50%);
+.p-main-inner {
+    &__top-title {
+        top: 50%;
+        left: 25px;
+        transform: translate(0, -50%);
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 2rem 0;
+        @include tab {
+            flex-direction: row;
+            padding: 4rem 0 0 4rem;
+        }
+        @include pc {
+            padding: 7.7% 1.9% 0 7%;
+        }
+    }
+    &__service {
+        position: relative;
+        margin-bottom: 2rem;
+        @include tab {
+            flex: 1 1 auto;
+            margin: 0 4rem 4rem 0;
+        }
+        @include pc {
+            margin: 0 5.6% 9.2% 0;
+        }
+    }
+    &__service-title {
+        top: 10px;
+        left: 10px;
+        @include pc {
+            top: 20px;
+            left: 20px;
+        }
+        &::after {
+            top: 76px;
+            left: 3.5px;
+            @include pc {
+                top: 135%;
+                left: 6.5px;
+            }
+        }
+    }
+    &__service-content {
+        position: absolute;
+        padding: 2.4rem 1.4rem 2.3rem 1rem;
+        background-color: rgba(255,255,255,0.8);
+        margin: 0 1rem;
+        height: 25%;
+        &--1 {
+            top: 46%;
+        }
+        &--2 {
+            top: 72.5%;
+        }
+    }
+    &__service-heading {
+        padding-bottom: 2.3rem; 
+    }
+    &__service-txt {
+        height: 62%;
+        overflow: hidden;
+    }
+    &__map {
+        background: url(../images/front-img04.png), linear-gradient(rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 60%,rgba(0,0,0,0,) 60%,rgba(0,0,0,0) 100%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        color: #fff;
+        padding: 4.6rem 4rem 5.1rem;
+        height: 691px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+        }
+        @include tab {
+            height: 415px;
+            background-color: rgba(0,0,0,0.7);
+        }
+        @include pc {
+            height: 649px;
+            padding: 9rem 0 0 12rem;
+            background: url(../images/front-img04.png), linear-gradient(90deg, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 61.3%,rgba(0,0,0,0,) 61.3%,rgba(0,0,0,0) 100%);
+            background-size: 100% 100%;
+        }
+    }
+    &__map-title {
+        padding-bottom: 4.6rem;
+        @include pc {
+            padding-bottom: 12.7rem;
+        }
+        &::after {
+            top: 56px;
+            left: 2px;
+            @include pc {
+                top: 99.5px;
+            }
+        }
+    }
+    &__map-txt {
+        height: 518px;
+        overflow: hidden;
+        @include tab {
+            height: 288px;
+        }
+        @include pc {
+            width: 48.7%;
+            height: 386px;
+        }
+    }
 }

@@ -10,5 +10,8 @@
     & a {
         color: #707070;
         font-size: 2rem;
+        @include pc {
+            font-size: calc(1.5rem + ((1vw - 10.24px) * 0.558));
+        }
     }    
 }

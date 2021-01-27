@@ -1,5 +1,9 @@
 @charset "utf-8";
 .l-sidebar {
     background-color: #F2EDE9;
-    width: 328px;
+    display: none;
+    @include pc {
+        display: block;
+        width: 19%;
+    }
 }
