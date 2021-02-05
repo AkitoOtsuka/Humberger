@@ -1,111 +1,15 @@
 @charset "utf-8";
-/*=====header=====*/
-.c-menu {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
-    @include tab {
-        font-size: 3.6rem;
+.c-txt {
+    &__service {
+        line-height: 1.5;
     }
-}
-.c-title {
-    font-family: 'Roboto', sans-serif;
-    font-size: 4rem;
-    @include pc {
-        font-size: 6.4rem;
-    }
-}
-/*=====footer======*/
-.c-copyright {
-    font-size: 1.4rem;
-}
-/*=====sidebar=====*/
-.c-close-icon {
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    position: relative;;
-    &::before,&::after {
-        content: "";
-        display: block;
-        width: 140%;
-        height: 6px;
-        transform: rotate(45deg);
-        transform-origin: 0% 50%;
-        position: absolute;
-        top: calc(0% - 3px);
-        left: 0%;
-        background-color: #707070;
-    }
-    &::after {
-        transform: rotate(-45deg);
-        transform-origin:100% 50%;
-        left: auto;
-        right: 0%;
-    }
-    @include pc {
-        visibility: hidden;
-    }
-}
-.c-menu-category {
-    font-size: 2.4rem;
-}
-/*=====maim=====*/
-.c-top-title {
-    font-size: 3.6rem;
-    color: #fff;
-    position: absolute;
-    @include pc {
-        font-size: 4rem;
-    }
-}
-.c-service-title {
-    font-family: 'Roboto', serif;
-    font-size: 4.1rem;
-    color: #fff;
-    position: absolute;
-    @include pc {
-        font-size: calc(4rem + ((1vw - 10.24px) * 4.4643));
-    }
-    &::after {
-        content: "";
-        display: block;
-        width: 3.4rem;
-        height: .4rem;
-        background-color: #fff;
-        position: absolute;
+    &__map {
+        font-size: 1.4rem;
+        line-height: 2.3;
+        position: relative;
         @include pc {
-            width: 6.3rem;
+            font-size: 1.6rem;
+            line-height: 2;
         }
-    }  
-}
-.c-service-heading {
-    font-size: 2.2rem;
-    line-height: 1;
-}
-.c-service-txt {
-    line-height: 1.5;
-}
-.c-map-title {
-    font-size: 3rem;
-    position: relative;
-    &::after {
-        content: "";
-        display: block;
-        width: 7.5rem;
-        height: .2rem;
-        background-color: #fff;
-        position: absolute;
     }
-    @include pc {
-        font-size: 3.6rem;
-    }
-}
-.c-map-txt {
-    font-size: 1.4rem;
-    line-height: 2.3;
-    position: relative;
-    @include pc {
-        font-size: 1.6rem;
-        line-height: 2;
-    }
-}
+}    

@@ -1,0 +1,70 @@
+@charset "utf-8";
+/*=====header=====*/
+.c-title {
+    &__menu {
+        font-family: 'Roboto', sans-serif;
+        font-size: 2rem;
+        @include tab {
+            font-size: 3.6rem;
+        }
+    } 
+    &__site {
+        font-family: 'Roboto', sans-serif;
+        font-size: 4rem;
+        @include pc {
+            font-size: 6.4rem;
+        }
+    }   
+/*=====sidebar=====*/
+    &__menu-category {
+        font-size: 2.4rem;
+    }     
+/*=====footer======*/
+    &__copyright {
+        font-size: 1.4rem;
+    }
+/*=====maim=====*/
+    &__top {
+        font-size: 3.6rem;
+        color: #fff;
+        position: absolute;
+        @include pc {
+            font-size: 4rem;
+        }
+    }
+    &__service {
+        font-family: 'Roboto', serif;
+        font-size: 4.1rem;
+        color: #fff;
+        position: absolute;
+        @include pc {
+            font-size: calc(4rem + ((1vw - 10.24px) * 4.4643));
+        }
+        &::after {
+            content: "";
+            display: block;
+            width: 3.4rem;
+            height: .4rem;
+            background-color: #fff;
+            position: absolute;
+            @include pc {
+                width: 6.3rem;
+            }
+        }  
+    }
+    &__map {
+        font-size: 3rem;
+        position: relative;
+        &::after {
+            content: "";
+            display: block;
+            width: 7.5rem;
+            height: .2rem;
+            background-color: #fff;
+            position: absolute;
+        }
+        @include pc {
+            font-size: 3.6rem;
+        }
+    }
+}

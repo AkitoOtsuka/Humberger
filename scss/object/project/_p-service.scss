@@ -1,0 +1,48 @@
+@charset "utf-8";
+.p-service {
+    position: relative;
+    margin-bottom: 2rem;
+    @include tab {
+        flex: 1 1 auto;
+        margin: 0 4rem 4rem 0;
+    }
+    @include pc {
+        margin: 0 5.6% 9.2% 0;
+    }
+    &__service-title {
+        top: 10px;
+        left: 10px;
+        @include pc {
+            top: 20px;
+            left: 20px;
+        }
+        &::after {
+            top: 76px;
+            left: 3.5px;
+            @include pc {
+                top: 135%;
+                left: 6.5px;
+            }
+        }
+    }
+    &__service-content {
+        position: absolute;
+        padding: 2.4rem 1.4rem 2.3rem 1rem;
+        background-color: rgba(255,255,255,0.8);
+        margin: 0 1rem;
+        height: 25%;
+        &--1 {
+            top: 46%;
+        }
+        &--2 {
+            top: 72.5%;
+        }
+    }
+    &__service-heading {
+        padding-bottom: 2.3rem; 
+    }
+    &__service-txt {
+        height: 62%;
+        overflow: hidden;
+    }
+}

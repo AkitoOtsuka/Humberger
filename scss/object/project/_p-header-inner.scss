@@ -21,7 +21,7 @@
             align-items: center;
         }
     }
-    &__title {
+    &__site-title {
         margin-bottom: 3.8rem;
         @include pc {
             margin: 0;
@@ -30,6 +30,15 @@
     &__search-container {
         display: flex;
         justify-content: center;
+    }
+    &__search-field {
+        border: 1px solid #707070;
+        border-radius: 10px;
+        font-size: 1.6rem;
+        padding: 1.1rem 0 1.1rem 1.6rem;
+        background-color: #fff;
+        display: flex;
+        width: 230px;
     }
     &__search-icon {
         margin-right: .9rem;

@@ -1,0 +1,9 @@
+@charset "utf-8";
+.p-top {
+    position: relative;
+    &__top-title {
+        top: 50%;
+        left: 25px;
+        transform: translate(0, -50%);
+    }
+}
