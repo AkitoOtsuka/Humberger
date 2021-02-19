@@ -67,4 +67,25 @@
             font-size: 3.6rem;
         }
     }
+    /*=====archive=====*/
+    &__archive-top {
+        font-family: 'Roboto', serif;
+        font-size: 3.6rem;
+        color: #fff;
+        position: absolute;
+        @include tab {
+            font-size: 6rem;
+        }
+    }
+    &__top-subtitle {
+        font-size: 1.6rem;
+        font-family: 'M PLUS 1p', sans-serif;
+        font-weight: normal;
+    }
+    &__card {
+        font-size: 2rem;
+        @include pc {
+            font-size: 3.6rem;
+        }
+    }
 }

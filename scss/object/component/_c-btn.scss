@@ -1,11 +1,29 @@
 @charset "utf-8";
 /*=====header=====*/
-.c-btn__search {
-    font-size: 1.6rem;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: normal;
-    background-color: #E8E3DE;
-    border: 1px solid #707070;
-    border-radius: 10px;
-    padding: 1.5rem 2.3rem;
-}
+.c-btn {
+    &__search {
+        font-size: 1.6rem;
+        font-family: 'M PLUS 1p', sans-serif;
+        font-weight: normal;
+        background-color: #E8E3DE;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        padding: 1.5rem 2.3rem;
+    }
+/*=====archive=====*/
+    &__card {
+        display: block;
+        width: 163px;
+        height: 42px;
+        background-color: #fff;
+        border-radius: 100vh;
+        color: #707070;
+        text-align: center;
+        line-height: 42px;
+        @include pc {
+            width: 292px;
+            height: 76px;
+            line-height: 76px;
+        }
+    }
+}   

@@ -4,4 +4,14 @@
         font-size: 2.2rem;
         line-height: 1;
     }
+    /*=====archive=====*/
+    &__txt {
+        font-size: 2.8rem;
+    }
+    &__card {
+        font-size: 1.6rem;
+        @include pc {
+            font-size: 2.4rem;
+        }
+    }
 }   

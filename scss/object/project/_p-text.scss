@@ -1,0 +1,21 @@
+@charset "utf-8";
+.p-text {
+    &__heading {
+        padding: 3.5rem 0;
+        @include tab {
+            padding-top: 4.3rem;
+        }
+        @include pc {
+            padding-top: 6.7rem;
+        }
+    }
+    &__txt {
+        margin-bottom: 2rem;
+        @include tab {
+            margin-bottom: 3.7rem;
+        }
+        @include pc {
+            margin-bottom: 7rem;
+        }
+    }
+}

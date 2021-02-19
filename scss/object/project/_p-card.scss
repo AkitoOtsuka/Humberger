@@ -1,0 +1,50 @@
+@charset "utf-8";
+/*=====archive=====*/
+.p-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    @include tab {
+        flex-direction: row;
+    }
+    &__img {
+        @include tab {
+            width: 50%;
+        }
+    }
+    &__body {
+        background-color: #3C2B1C;
+        color: #fff;
+        @include tab {
+            width: 50%;
+        }
+    }
+    &__block {
+        padding-left: 5%;
+        @include tab {
+            padding-left: 9.1%;
+        }
+    }
+    &__title {
+        margin: 3.4rem 0 3.1rem;
+        @include pc {
+            margin: 6rem 0;
+        }
+    }
+    &__txt {
+        margin-top: 1.3rem;
+        padding-right: 21.7%;
+        @include tab {
+            padding-right: 15.6%;
+        }
+        @include pc {
+            margin-top: 2.2rem;
+        }
+    }
+    &__btn {
+        margin: 4rem auto;
+        @include pc {
+            margin: 6rem auto;
+        }
+    }
+}

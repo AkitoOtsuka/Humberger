@@ -5,5 +5,22 @@
         top: 50%;
         left: 25px;
         transform: translate(0, -50%);
+        @include tab {
+            left: 86px;
+        }
+/*=====archive======*/
+        br {
+            @include tab {
+                display: none;
+            }
+        }
+        
+    }
+    &--archive {
+        position: relative;
+        background-color: #000;
+    }
+    &__top-subtitle {
+        vertical-align: middle;
     }
 }
