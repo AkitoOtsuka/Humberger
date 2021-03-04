@@ -1,0 +1,13 @@
+@charset "utf-8";
+.c-table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    td {
+        border: 1px solid #707070;
+        padding: 3rem;
+    }
+    &__left {
+        width: 40%;
+    }
+}

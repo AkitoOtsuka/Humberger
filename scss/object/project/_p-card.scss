@@ -47,4 +47,46 @@
             margin: 6rem auto;
         }
     }
+    /*=====single=====*/
+    &--single {
+        flex-direction: row;
+        margin: 3rem 0;
+        height: 176px;
+        @include tab {
+            height: auto;
+            margin: 6rem 0;
+        }
+        p {
+            margin-bottom: 0;
+        }
+        + div {
+            @include tab {
+                margin-top: 11.7rem;
+            }
+            @include pc {
+                margin-top: 6rem;
+            }
+        }
+    }
+    &__single-right-txt {
+        margin-left: 1rem;
+        @include tab {
+            margin-left: 2.1rem;
+        }
+        @include pc {
+            margin-left: 4rem;
+        }
+    }
+    &__single-left-txt {
+        margin-right: 1rem;
+        @include tab {
+            margin-right: 2.1rem;
+        }
+        @include pc {
+            margin-right: 4rem;
+        }
+    }
+    &__single-img {
+        order: 2;
+    }
 }

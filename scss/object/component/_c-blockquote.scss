@@ -1,0 +1,17 @@
+@charset "utf-8";
+.c-blockquote {
+    padding: 3rem 1.6rem 3rem 2rem;
+    background-color: #F5F5F5;
+    @include tab {
+        padding: 5rem 5.6rem 6.1rem 5rem;
+    }
+    @include pc {
+        padding: 5rem 6rem 5.1rem 5rem;
+    }
+    p {
+        margin-bottom: 3.2rem;
+        @include tab {
+            margin-bottom: 6.2rem;
+        }
+    } 
+}

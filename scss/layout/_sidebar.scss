@@ -1,9 +1,23 @@
 @charset "utf-8";
 .l-sidebar {
     background-color: #F2EDE9;
-    display: none;
+    width: 90%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    overflow-y: scroll;
+    z-index: 10;
+    transition: all .5s;
+    @include tab {
+        width: 367px;
+    }
     @include pc {
-        display: block;
         width: 19%;
+        right: 0;
+        position: static;
+    }
+    &.is-open {
+        right: 0;
     }
 }

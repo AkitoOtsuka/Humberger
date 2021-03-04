@@ -9,20 +9,21 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="l-wrapper">
         <div class="l-container">
             <header class="l-header">
                 <div class="p-header-inner">
-                    <h2 class="c-title__menu p-header-inner__menu">Menu</h2>
+                    <h2 class="c-title__menu p-header-inner__menu js-menu">Menu</h2>
                     <div class="p-header-inner__block">
                         <h1 class="c-title__site p-header-inner__site-title">Hamberger</h1>
                         <form action="#" method="POST" autocomplete="off" class="p-header-inner__search-container">
-                        <div class="p-header-inner__search-field">
-                            <i class="fas fa-search c-icon__search p-header-inner__search-icon"></i>
-                            <input type="text" name="search" id="search-field">
-                        </div>
+                            <div class="p-header-inner__search-field">
+                                <i class="fas fa-search c-icon__search p-header-inner__search-icon"></i>
+                                <input type="text" name="search" id="search-field">
+                            </div>
                         <p class="c-btn__search p-header-inner__search-btn"><input type="submit" name="search-btn" value="検索" id="search-btn"></p>
                         </form>
                     </div>
@@ -67,9 +68,9 @@
                 </div>
             </main>
         </div>
-        <aside class="l-sidebar">
+        <aside class="l-sidebar js-slidemenu">
             <div class="p-sidebar-inner">
-                <div class="c-icon__close"></div>
+                <div class="c-icon__close js-close"></div>
                 <div class="p-sidebar-inner__menu-wrapper">
                     <h2 class="c-title__menu p-sidebar-inner__menu">Menu</h2>
                     <h3 class="c-title__menu-category p-sidebar-inner__menu-category">バーガー</h3>
@@ -101,6 +102,7 @@
                 </div>
             </div>
         </aside>
+        <div class="l-wrapper__mask js-mask"></div>
     </div>
     <footer class="l-footer">
         <div class="p-footer-inner">
@@ -108,5 +110,6 @@
             <p class="c-title__copyright">Copyright: RaiseTech</p>
         </div>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

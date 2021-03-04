@@ -11,6 +11,7 @@
     &__service {
         height: auto;
     }
+    /*=====archive=====*/
     &__archive-top {
         object-position: 0% 0%;
         object-fit: cover;
@@ -23,6 +24,76 @@
     &__archive-top-pc {
         object-fit: cover;
         height: 239px;
+        vertical-align: bottom;
+        display: none;
+        @include pc {
+            display: block;
+        }
+    }
+    /*=====single=====*/
+    &__single-top {
+        object-fit: cover;
+        height: 225px;
+        vertical-align: bottom;
+        @include tab {
+            height: 500px;
+        }
+        @include pc {
+            display: none;
+        }
+    }
+    &__single-top-pc {
+        object-fit: cover;
+        height: 500px;
+        vertical-align: bottom;
+        display: none;
+        @include pc {
+            display: block;
+        }
+    }
+    &__single-card {
+        width: 42.7%;
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &__single-small {
+        display: block;
+        width: 79.7%;
+        margin: 0 auto;
+        @include tab {
+            width: 81.4%;
+        }
+        @include pc {
+            width: 581px;
+        }
+    }
+    /*=====page=====*/
+    &__page-top {
+        object-fit: cover;
+        height: 225px;
+        vertical-align: bottom;
+        @include tab {
+            display: none;
+        }
+    }
+    &__page-top-tab {
+        object-fit: cover;
+        height: 500px;
+        vertical-align: bottom;
+        display: none;
+        @include tab {
+            display: block;
+        }
+        @include pc {
+            display: none;
+        }
+    }
+    &__page-top-pc {
+        object-fit: cover;
+        height: 500px;
         vertical-align: bottom;
         display: none;
         @include pc {

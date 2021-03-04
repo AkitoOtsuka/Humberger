@@ -7,7 +7,9 @@
         padding-right: 4.6%;
     }
     &__menu {
+        display: none;
         @include pc {
+            display: block;
             margin: -16.7rem 0 9rem;
         }
     }
