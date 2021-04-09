@@ -1,4 +1,4 @@
-$(function() {
+jQuery(function($) {
   $('.js-menu').on('click', function() {
     $('.js-slidemenu').addClass('is-open');
     $('.js-mask').addClass('is-open');
