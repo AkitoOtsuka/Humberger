@@ -1,0 +1,12 @@
+@charset "utf-8";
+/*=====footer=====*/
+.c-nav {
+    &__footer {
+        color: #fff;
+        font-size: 2rem;
+    }
+    &__footer-separation {
+        font-size: 1.4rem;
+        vertical-align: middle;
+    }
+}

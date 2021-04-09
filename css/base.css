@@ -1,0 +1,25 @@
+html, body {
+  font-size: 62.5%;
+  font-family: 'M PLUS 1p', sans-serif;
+  color: #3C2A10;
+  background: #FFFDFA;
+}
+
+body, div, p, h1, h2, h3, h4, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+p, td, th, li {
+  line-height: 1.8;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=base.css.map */

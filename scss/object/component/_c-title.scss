@@ -15,6 +15,10 @@
             font-size: 6.4rem;
         }
     }   
+/*=====sidebar=====*/
+    &__menu-category {
+        font-size: 2.4rem;
+    }     
 /*=====footer======*/
     &__copyright {
         font-size: 1.4rem;
@@ -82,9 +86,6 @@
         font-size: 2rem;
         @include pc {
             font-size: 3.6rem;
-        }
-        a {
-            color: #fff;
         }
     }
 /*=====single=====*/

@@ -1,21 +1,20 @@
 @charset "utf-8";
 /*=====sidebar=====*/
 .c-list {
-    &__menu-category {
-        font-size: 2.4rem;
+    &__menu {
         list-style: none;
-        .sub-menu {
-            list-style: none;
+    }   
+    &__menu-items {
+        padding-bottom: 3rem;
+        &:last-child {
+            padding-bottom: 0;
+        }
+        & a {
+            color: #707070;
             font-size: 2rem;
             @include pc {
                 font-size: calc(1.5rem + ((1vw - 10.24px) * 0.558));
             }
-            li {
-                padding-bottom: 3rem;
-                &:last-child {
-                    padding-bottom: 0;
-                }
-            }
-        }
-    } 
+        }       
+    }
 }

@@ -21,11 +21,12 @@
         }
     }
     &__menu-category {
-        .sub-menu {
-            padding: 4.4rem 0 5rem 2rem;
-            @include pc {
-                padding-left: 6.7%; 
-            }
+        padding-bottom: 4.4rem;
+    }
+    &__menu-list {
+        padding: 0 0 5rem 2rem;
+        @include pc {
+            padding-left: 6.7%; 
         }
     }
 }
