@@ -20,7 +20,7 @@
                                     <div class="p-card__body">
                                         <div class="p-card__block">
                                             <h3 class="c-title__card p-card__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                                            <?php the_content(); ?>
+                                            <?php the_excerpt(); ?>
                                         </div>
                                         <a href="#" class="c-btn__card p-card__btn">詳しく見る</a>
                                     </div>
