@@ -11,9 +11,13 @@
         <div class="l-container">
             <header class="l-header">
                 <div class="p-header-inner">
-                    <h2 class="c-title__menu p-header-inner__menu js-menu">Menu</h2>
+                    <button class="c-menu-btn p-header-inner__menu-btn js-menu">Menu</button>
                     <div class="p-header-inner__block">
-                        <h1 class="c-title__site p-header-inner__site-title"><a href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a></h1>
+                        <?php if ( is_home() ): ?>
+                            <h1 class="c-site-title p-header-inner__site-title"><a href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a></h1>
+                        <?php else: ?>
+                            <p class="c-site-title p-header-inner__site-title"><a href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a></p>
+                        <?php endif; ?>
                         <?php get_search_form(); ?>
                     </div>
                 </div>

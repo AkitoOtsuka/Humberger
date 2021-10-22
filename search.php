@@ -4,8 +4,8 @@
                     <div class="p-top p-top--archive">
                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/archive-img01.png" alt="Menu" class="p-top__archive-img">
                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/archive-img01-pc.png" alt="Menu" class="p-top__archive-img-pc">
-                        <h1 class="c-top-title c-top-title--archive p-top__title">Menu:<br>
-                            <span class="c-top-subtitle p-top__subtitle"><?php wp_title(''); ?></span>
+                        <h1 class="c-top-title c-top-title--archive p-top__title">Search:<br>
+                            <span class="c-top-subtitle p-top__subtitle"><?php the_search_query(); ?></span>
                         </h1>
                     </div>
                     <div class="l-main__archive-inner-block">
@@ -26,6 +26,10 @@
                                     </div>
                                 </section>
                             <?php endwhile; ?>
+                        <?php else: ?>
+                            <div class="c-archive-search-txt">
+                                <p>検索結果はありませんでした</p>
+                            </div>
                         <?php endif; ?>
                         <div class="c-pagenation">
                             <ul class="c-pagenation__sp">

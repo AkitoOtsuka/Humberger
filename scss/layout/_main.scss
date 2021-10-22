@@ -23,58 +23,251 @@
         }
     }
 /*=====single=====*/
+/*=====ブロックエディター=====*/
     &__single-inner-block {
         padding: 0 2rem;
+        margin-top: 3rem;
         @include tab {
             padding: 0 7.2%;
+            margin-top: 6rem;
         }
         @include pc {
             padding: 0 6.44%;
         }
         h2 {
             font-size: 2.8rem;
-            margin: 3.5rem 0 3.3rem;
             @include tab {
                 font-size: 3.6rem;
-                margin: 6.7rem 0 6.4rem; 
             }
         }
         p {
-            margin-bottom: 3.9rem;
-            @include tab {
-                margin-bottom: 6.5rem;
-            }
-        }
-        .large {
-            font-size: 2.4rem;
-            margin-bottom: 3.6rem;
-            @include tab {
-                font-size: 2.8rem;
-                margin-bottom: 6.6rem;
-            }
-        }
-        h3,h4,h5 {
-            font-size: 2rem;
             margin-bottom: 3.4rem;
             @include tab {
-                margin-bottom: 6.4rem;
+                margin-bottom: 6rem;
             }
         }
-        h6 {
-            font-size: 2rem;
-            margin-bottom: 3.1rem;
+        h3 {
+            font-size: 2.4rem;
             @include tab {
-                margin-bottom: 6.1rem;
+                font-size: 2.8rem;
+            }
+        }
+        h4 {
+            font-size: 2rem;
+        }
+        h2, h3, h4 {
+            margin-bottom: 3rem;
+            @include tab {
+                margin-bottom: 6rem;
             }
         }
         img {
+            object-fit: cover;
+            object-position: bottom;
+            max-height: 264px;
             vertical-align: bottom;
+            @include pc {
+                max-height: 500px;
+            }
         }
-        b {
+        /*=====リスト部分=====*/
+        ul, ol {
+            padding-left: 2rem;
+            @include tab {
+                padding-left: 5rem;
+            }
+        }
+        ul {
+            margin-bottom: 3rem;
+            @include tab {
+                margin-bottom: 6rem;
+            }    
+            li:nth-child(4) {
+                ul {
+                    margin: 2rem 0;
+                    padding-left: 1.8rem;
+                }
+            }
+        }
+        ol {
+            margin-bottom: 6rem;
+            li:nth-child(4) {
+                ol {
+                    margin: 2rem 0;
+                    padding-left: 1.8rem;
+                }
+            }
+        }
+        strong {
             display: block;
-            margin-bottom: 7.1rem;
+            margin-bottom: 7rem;
             @include pc {
                 margin-bottom: 18rem;
+            }
+        }
+        .wp-block-quote {
+            padding: 3rem 1.6rem 3rem 2rem;
+            background-color: #F5F5F5;
+            margin-bottom: 3rem;
+            @include tab {
+                padding: 5rem 5.6rem 6rem 5rem;
+                margin-bottom: 6rem;
+            }
+            @include pc {
+                padding: 5rem 6rem 5rem 5rem;
+            }
+            p {
+                margin-bottom: 3rem;
+                @include tab {
+                    margin-bottom: 6rem;
+                }
+            } 
+        }
+        .wp-block-media-text {
+            display: flex;
+            flex-direction: row;
+            margin: 3rem 0;
+            @include tab {
+                margin: 6rem 0;
+            }
+            &__media {
+                width: 42.7%;
+                img {
+                    display: block;
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+            &__content {
+                width: 54%;
+                margin-left: 1rem;
+                padding: 0;
+                @include tab {
+                    margin-left: 2.1rem;
+                }
+                @include pc {
+                    margin-left: 4rem;
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .has-media-on-the-right {
+            @include tab {
+                margin-top: 11.7rem;
+            }
+            @include pc {
+                margin-top: 6rem;
+            }
+            figure {
+                order: 2;
+            }
+            .wp-block-media-text__content {
+                margin-left: 0;
+                margin-right: 1rem;
+                @include tab {
+                    margin-right: 2.1rem;
+                }
+                @include pc {
+                    margin-right: 4rem;
+                }
+            }
+        }
+        .wp-block-image {
+            margin-bottom: 0;
+            .aligncenter {
+                display: block;
+                width: 79.7%;
+                margin: 0 auto;
+                @include tab {
+                    width: 81.4%;
+                }
+                @include pc {
+                    width: 581px;
+                }
+                img {
+                    max-height: none;
+                }
+            }
+        }
+        .blocks-gallery-grid {
+            display: grid;
+            gap: 2rem;
+            margin: 3rem 0;
+            padding: 0;
+            @include tab {
+                grid-template-columns: repeat(2,1fr);
+                gap: 2rem 1.6rem;
+                margin: 24.1rem 0 6rem 0;
+            }
+            @include pc {
+                grid-template-columns: repeat(3,1fr);
+                gap: 2rem;
+                margin-top: 6rem;
+            }
+            .blocks-gallery-item {
+                width: 100%;
+                margin: 0;
+                figure {
+                    height: 100%;
+                }
+            }
+        }
+        .wp-block-code {
+            padding: 5rem;
+            background-color: #F5F5F5;
+            code {
+                font-family: 'M PLUS 1p', sans-serif;
+            }   
+        }
+        .wp-block-table {
+            margin: 3rem 0;
+            @include tab {
+                margin: 6rem 0;
+            }
+            @include pc {
+                margin: 5rem 0 6rem;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                table-layout: fixed;
+                td {
+                    border: 1px solid #707070;
+                    padding: 3rem;
+                    &:nth-child(odd) {
+                        width: 40%;
+                        @include tab {
+                            width: 30%;
+                        }
+                    }
+                }
+            }
+        }
+        .wp-block-button {
+            width: 100%;
+            margin-bottom: 3rem;
+            @include tab {
+                margin-bottom: 6rem;
+            }
+            &__link {
+                display: block;
+                height: 81px;
+                background-color: #F2EDE9;
+                color: #3C2A10;
+                text-align: center;
+                line-height: 81px;
+                border-radius: 20px;
+                border: 1px solid #707070;
+                font-size: 1.6rem;
+                font-weight: bold;
+                padding: 0;
+                @include tab {
+                    width: 429px;
+                    height: 104px;
+                    line-height: 104px;
+                }
             }
         }
     }

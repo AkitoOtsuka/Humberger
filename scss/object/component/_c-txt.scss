@@ -1,23 +1,5 @@
 @charset "utf-8";
-.c-txt {
-    &__service {
-        line-height: 1.5;
-    }
-    &__map {
-        font-size: 1.4rem;
-        line-height: 2.3;
-        position: relative;
-        @include pc {
-            font-size: 1.6rem;
-            line-height: 2;
-        }
-    }
-/*=====single=====*/
-    &__single-card {
-        width: 54.7%;
-        overflow: scroll;
-        @include tab {
-            overflow: visible;
-        }
-    }
+/*=====seach=====*/
+.c-archive-search-txt {
+    text-align: center;
 }

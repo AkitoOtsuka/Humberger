@@ -1,99 +1,84 @@
 @charset "utf-8";
 /*=====header=====*/
-.c-title {
-    &__menu {
-        font-family: 'Roboto', sans-serif;
-        font-size: 2rem;
-        @include tab {
-            font-size: 3.6rem;
-        }
-    } 
-    &__site {
-        font-family: 'Roboto', sans-serif;
-        font-size: 4rem;
-        @include pc {
-            font-size: 6.4rem;
-        }
-    }   
+.c-site-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    @include pc {
+        font-size: 6.4rem;
+    }
+}
 /*=====footer======*/
-    &__copyright {
-        font-size: 1.4rem;
+.c-copyright-title {
+    font-size: 1.4rem;
+}
+/*=====top画面=====*/
+.c-top-title {
+    font-size: 3.6rem;
+    color: #fff;
+    position: absolute;
+    @include pc {
+        font-size: 4rem;
     }
-/*=====maim=====*/
-    &__top {
-        font-size: 3.6rem;
-        color: #fff;
-        position: absolute;
-        @include pc {
-            font-size: 4rem;
-        }
-    }
-    &__service {
+    &--archive {
         font-family: 'Roboto', serif;
-        font-size: 4.1rem;
-        color: #fff;
+        @include tab {
+            font-size: 6rem;
+        } 
+    }
+    &--single {
+        @include tab {
+            font-size: 6rem;
+        }
+    }
+}
+/*=====front=====*/
+.c-service-title {
+    font-family: 'Roboto', serif;
+    font-size: 4.1rem;
+    color: #fff;
+    position: absolute;
+    @include pc {
+        font-size: calc(4rem + ((1vw - 10.24px) * 4.4643));
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 3.4rem;
+        height: .4rem;
+        background-color: #fff;
         position: absolute;
         @include pc {
-            font-size: calc(4rem + ((1vw - 10.24px) * 4.4643));
+            width: 6.3rem;
         }
-        &::after {
-            content: "";
-            display: block;
-            width: 3.4rem;
-            height: .4rem;
-            background-color: #fff;
-            position: absolute;
-            @include pc {
-                width: 6.3rem;
-            }
-        }  
+    }  
+}
+.c-map-title {
+    font-size: 3rem;
+    position: relative;
+    &::after {
+        content: "";
+        display: block;
+        width: 7.5rem;
+        height: .2rem;
+        background-color: #fff;
+        position: absolute;
     }
-    &__map {
-        font-size: 3rem;
-        position: relative;
-        &::after {
-            content: "";
-            display: block;
-            width: 7.5rem;
-            height: .2rem;
-            background-color: #fff;
-            position: absolute;
-        }
-        @include pc {
-            font-size: 3.6rem;
-        }
+    @include pc {
+        font-size: 3.6rem;
     }
+}
 /*=====archive=====*/
-    &__archive-top {
-        font-family: 'Roboto', serif;
+.c-top-subtitle {
+    font-size: 1.6rem;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: bold;
+}
+.c-card-title {
+    font-size: 2rem;
+    @include pc {
         font-size: 3.6rem;
+    }
+    a {
         color: #fff;
-        position: absolute;
-        @include tab {
-            font-size: 6rem;
-        }
-    }
-    &__top-subtitle {
-        font-size: 1.6rem;
-        font-family: 'M PLUS 1p', sans-serif;
-        font-weight: normal;
-    }
-    &__card {
-        font-size: 2rem;
-        @include pc {
-            font-size: 3.6rem;
-        }
-        a {
-            color: #fff;
-        }
-    }
-/*=====single=====*/
-    &__single-top {
-        font-size: 3.6rem;
-        color: #fff;
-        position: absolute;
-        @include tab {
-            font-size: 6rem;
-        }
     }
 }

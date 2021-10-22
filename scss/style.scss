@@ -9,14 +9,9 @@
 @import "layout/wrapper.scss";
 @import "layout/container.scss";
 @import "object/component/c-title.scss";
-@import "object/component/c-icon.scss";
-@import "object/component/c-btn.scss";
-@import "object/component/c-heading.scss";
 @import "object/component/c-txt.scss";
-@import "object/component/c-list.scss";
-@import "object/component/c-img.scss";
-@import "object/component/c-blockquote.scss";
-@import "object/component/c-table.scss";
+@import "object/component/c-btn.scss";
+@import "object/component/c-pagenation.scss";
 @import "object/project/p-header-inner.scss";
 @import "object/project/p-footer-inner.scss";
 @import "object/project/p-sidebar-inner.scss";
@@ -25,7 +20,3 @@
 @import "object/project/p-map.scss";
 @import "object/project/p-text.scss";
 @import "object/project/p-card.scss";
-@import "object/project/p-blockquote.scss";
-@import "object/project/p-grid.scss";
-@import "object/project/p-list.scss";
-@import "object/project/p-btn.scss";

@@ -7,6 +7,9 @@
     @include tab {
         flex-direction: row;
     }
+    @include pc {
+        margin-bottom: 3rem;
+    }
     img {
         @include tab {
             width: 50%;
@@ -31,20 +34,20 @@
             }
         }
         p {
-            margin-top: 1.3rem;
+            margin-top: 1rem;
             padding-right: 21.7%;
             @include tab {
                 padding-right: 15.6%;
             }
             @include pc {
-                margin-top: 2.2rem;
+                margin-top: 1.7rem;
             }
         }
     }
     &__title {
-        margin: 3.4rem 0 3.1rem;
+        margin: 3rem 0 2.4rem;
         @include pc {
-            margin: 6rem 0;
+            margin: 5.3rem 0 4.7rem;
         }
     }
     &__btn {
@@ -52,47 +55,5 @@
         @include pc {
             margin: 6rem auto;
         }
-    }
-    /*=====single=====*/
-    &--single {
-        flex-direction: row;
-        margin: 3rem 0;
-        height: 176px;
-        @include tab {
-            height: auto;
-            margin: 6rem 0;
-        }
-        p {
-            margin-bottom: 0;
-        }
-        + div {
-            @include tab {
-                margin-top: 11.7rem;
-            }
-            @include pc {
-                margin-top: 6rem;
-            }
-        }
-    }
-    &__single-right-txt {
-        margin-left: 1rem;
-        @include tab {
-            margin-left: 2.1rem;
-        }
-        @include pc {
-            margin-left: 4rem;
-        }
-    }
-    &__single-left-txt {
-        margin-right: 1rem;
-        @include tab {
-            margin-right: 2.1rem;
-        }
-        @include pc {
-            margin-right: 4rem;
-        }
-    }
-    &__single-img {
-        order: 2;
     }
 }

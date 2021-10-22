@@ -1,46 +1,64 @@
 @charset "utf-8";
 /*=====header=====*/
-.c-btn {
-    &__search {
-        font-size: 1.6rem;
-        font-family: 'M PLUS 1p', sans-serif;
-        font-weight: normal;
-        background-color: #E8E3DE;
-        border: 1px solid #707070;
-        border-radius: 10px;
+.c-menu-btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    @include tab {
+        font-size: 3.6rem;
+    }
+}
+.c-search-btn {
+    font-size: 1.6rem;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: normal;
+    background-color: #E8E3DE;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    input {
         padding: 1.5rem 2.3rem;
     }
+}
 /*=====archive=====*/
-    &__card {
-        display: block;
-        width: 163px;
-        height: 42px;
-        background-color: #fff;
-        border-radius: 100vh;
-        color: #707070;
-        text-align: center;
-        line-height: 42px;
-        @include pc {
-            width: 292px;
-            height: 76px;
-            line-height: 76px;
-        }
+.c-card-btn {
+    display: block;
+    width: 163px;
+    height: 42px;
+    background-color: #fff;
+    border-radius: 100vh;
+    color: #707070;
+    text-align: center;
+    line-height: 42px;
+    @include pc {
+        width: 292px;
+        height: 76px;
+        line-height: 76px;
     }
-/*======single======*/
-    &__single {
+}
+/*=====sidebar=====*/
+.c-close-btn {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    position: relative;;
+    &::before, &::after {
+        content: "";
         display: block;
-        width: 100%;
-        height: 81px;
-        background-color: #F2EDE9;
-        color: #3C2A10;
-        text-align: center;
-        line-height: 81px;
-        border-radius: 20px;
-        border: 1px solid #707070;
-        @include tab {
-            width: 429px;
-            height: 104px;
-            line-height: 104px;
-        }
+        width: 140%;
+        height: 6px;
+        transform: rotate(45deg);
+        transform-origin: 0% 50%;
+        position: absolute;
+        top: calc(0% - 3px);
+        left: 0%;
+        background-color: #707070;
     }
-}   
+    &::after {
+        transform: rotate(-45deg);
+        transform-origin: 100% 50%;
+        left: auto;
+        right: 0%;
+    }
+    @include pc {
+        visibility: hidden;
+    }   
+}

@@ -1,27 +1,62 @@
 @charset "utf-8";
-/*=====front,single=====*/
+/*=====front,single,page=====*/
 .p-top {
     position: relative;
-    &__top-title {
+    /*=====frontのみ=====*/
+    &__img {
+        object-fit: cover;
+        height: 285px;
+        vertical-align: bottom;
+        @include pc {
+            height: 530px;
+        }  
+    }
+    /*=====終わり=====*/
+    &__title {
         top: 50%;
         left: 25px;
         transform: translate(0, -50%);
         @include tab {
             left: 86px;
         }
-/*=====archive======*/
+/*=====archive,search======*/
         br {
             @include tab {
                 display: none;
             }
         }
-        
     }
     &--archive {
-        position: relative;
         background-color: #000;
     }
-    &__top-subtitle {
+    &__archive-img {
+        object-position: 0% 0%;
+        object-fit: cover;
+        height: 285px;
+        vertical-align: bottom;
+        @include pc {
+            display: none;
+        }
+    }
+    &__archive-img-pc {
+        object-fit: cover;
+        height: 239px;
+        vertical-align: bottom;
+        display: none;
+        @include pc {
+            display: block;
+        }
+    }
+    &__subtitle {
         vertical-align: middle;
+    }
+/*=====single,page=====*/
+    .wp-post-image {
+        object-fit: cover;
+        height: 225px;
+        vertical-align: bottom;
+        @include tab {
+            height: 500px;
+        }
     }
 }

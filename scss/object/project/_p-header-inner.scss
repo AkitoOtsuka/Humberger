@@ -6,7 +6,7 @@
     @include pc {
         padding: 6.7rem 3rem 6.7rem 6.5rem;
     }
-    &__menu {
+    &__menu-btn {
         @include pc {
             display: none;
         }
@@ -41,6 +41,8 @@
         width: 230px;
     }
     &__search-icon {
+        font-size: 2.4rem;
+        vertical-align: middle;
         margin-right: .9rem;
     }
     &__search-btn {

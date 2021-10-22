@@ -5,7 +5,7 @@
     background-size: cover;
     position: relative;
     color: #fff;
-    padding: 4.6rem 4rem 5.1rem;
+    padding: 4rem 4rem 5.1rem;
     height: 691px;
     &::before {
         content: "";
@@ -18,34 +18,41 @@
     }
     @include tab {
         height: 415px;
+        padding: 4rem 3rem 0 4.2rem;
         background-color: rgba(0,0,0,0.7);
     }
     @include pc {
         height: 649px;
-        padding: 9rem 0 0 12rem;
+        padding: 8.3rem 0 0 12rem;
         background: url(../images/front-img04.png), linear-gradient(90deg, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 61.3%,rgba(0,0,0,0,) 61.3%,rgba(0,0,0,0) 100%);
         background-size: 100% 100%;
     }
-    &__map-title {
-        padding-bottom: 4.6rem;
+    &__title {
+        padding-bottom: 4rem;
         @include pc {
-            padding-bottom: 12.7rem;
+            padding-bottom: 12rem;
         }
         &::after {
-            top: 56px;
+            top: 59px;
             left: 2px;
             @include pc {
-                top: 99.5px;
+                top: 101.5px;
             }
         }
     }
-    &__map-txt {
+    &__txt {
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 2.3;
+        position: relative;
         height: 518px;
-        overflow: hidden;
+        overflow: scroll;
         @include tab {
             height: 288px;
         }
         @include pc {
+            font-size: 1.6rem;
+            line-height: 2;
             width: 48.7%;
             height: 386px;
         }

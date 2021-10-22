@@ -1,0 +1,44 @@
+@charset "utf-8";
+.c-pagenation {
+    &__sp {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        margin: 6rem 0 3rem 0;
+        @include tab {
+            display: none;
+        }
+    }
+    .wp-pagenavi {
+        display: none;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        margin: 11.2rem 0 3.7rem 0;
+        @include tab {
+            display: block;
+        }
+        @include pc {
+            margin: 15.7rem 0 6.7rem 0
+        }
+        .pages {
+            padding: 0;
+            margin: 0 1.7rem 0 0;
+            color: #707070;
+            border: none;
+        }
+        .current, .page {
+            padding: .7rem 1.2rem;
+            border: 1px solid #707070;
+            margin: 0 1.5rem 0 0;
+        }
+        .current {
+            color: #fff;
+            background-color: #3C2B1C;
+        }
+        .previouspostslink, .nextpostslink {
+            padding: 0;
+            border: none;
+            margin: 0 1.7rem 0 .2rem;
+        }
+    }
+}
