@@ -60,6 +60,9 @@
     &__txt {
         line-height: 1.5;
         height: 62%;
-        overflow: scroll;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 }

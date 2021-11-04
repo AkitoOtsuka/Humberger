@@ -16,7 +16,11 @@
                         <?php if ( have_posts() ) : ?>
                             <?php while ( have_posts() ) : the_post(); ?>
                                 <section id="post-<?php the_ID(); ?>" <?php post_class('p-card'); ?>>
-                                    <?php the_post_thumbnail('thumbnail'); ?>
+                                    <?php if ( has_post_thumbnail() ) : ?>
+                                        <?php the_post_thumbnail(); ?>
+                                    <?php else: ?>
+                                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/noimage.png" alt="noimage" class="p-card__noimage">
+                                    <?php endif; ?>
                                     <div class="p-card__body">
                                         <div class="p-card__block">
                                             <h3 class="c-card-title p-card__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>

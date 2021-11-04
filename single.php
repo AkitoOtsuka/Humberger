@@ -4,7 +4,11 @@
                     <?php if ( have_posts() ) : ?>
                         <?php while ( have_posts() ) : the_post(); ?>
                             <div class="p-top">
-                                <?php the_post_thumbnail(); ?>
+                                <?php if ( has_post_thumbnail() ) : ?>
+                                    <?php the_post_thumbnail(); ?>
+                                <?php else: ?>
+                                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/noimage.png" alt="noimage" class="p-top__noimage">
+                                <?php endif; ?>
                                 <h1 class="c-top-title c-top-title--single p-top__title"><?php the_title(); ?></h1>
                             </div>
                             <section class="l-main__single-inner-block">

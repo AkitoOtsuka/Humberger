@@ -69,6 +69,7 @@ input[type="text"]:focus {
     width: 19%;
     right: 0;
     position: static;
+    overflow-y: visible;
   }
 }
 
@@ -1087,6 +1088,19 @@ input[type="text"]:focus {
   }
 }
 
+.p-top__noimage {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 225px;
+  vertical-align: bottom;
+}
+
+@media (min-width: 600px) {
+  .p-top__noimage {
+    height: 500px;
+  }
+}
+
 .p-service {
   position: relative;
   margin-bottom: 2rem;
@@ -1178,7 +1192,11 @@ input[type="text"]:focus {
 .p-service__txt {
   line-height: 1.5;
   height: 62%;
-  overflow: scroll;
+  overflow-y: scroll;
+}
+
+.p-service__txt::-webkit-scrollbar {
+  display: none;
 }
 
 .p-map {
@@ -1329,6 +1347,12 @@ input[type="text"]:focus {
 
 @media (min-width: 600px) {
   .p-card img {
+    width: 50%;
+  }
+}
+
+@media (min-width: 600px) {
+  .p-card__noimage {
     width: 50%;
   }
 }

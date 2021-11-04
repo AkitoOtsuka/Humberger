@@ -59,4 +59,12 @@
             height: 500px;
         }
     }
+    &__noimage {
+        object-fit: cover;
+        height: 225px;
+        vertical-align: bottom;
+        @include tab {
+            height: 500px;
+        }
+    }
 }

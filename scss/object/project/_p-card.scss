@@ -15,6 +15,11 @@
             width: 50%;
         }
     }
+    &__noimage {
+        @include tab {
+            width: 50%;
+        }
+    }
     &__body {
         background-color: #3C2B1C;
         color: #fff;
