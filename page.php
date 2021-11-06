@@ -7,7 +7,9 @@
                                 <?php if ( has_post_thumbnail() ) : ?>
                                     <?php the_post_thumbnail(); ?>
                                 <?php else: ?>
-                                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/noimage.png" alt="noimage" class="p-top__noimage">
+                                    <div class="p-top__noimage">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/noimage.png" alt="noimage">
+                                    </div>
                                 <?php endif; ?>
                                 <h1 class="c-top-title c-top-title--single p-top__title"><?php the_title(); ?></h1>
                             </div>

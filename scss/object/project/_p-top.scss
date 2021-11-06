@@ -60,11 +60,17 @@
         }
     }
     &__noimage {
+        background-color: gray;
+        opacity: 0.5;
+        display: block;
+        img {
         object-fit: cover;
         height: 225px;
         vertical-align: bottom;
+        opacity: 0.5;
         @include tab {
             height: 500px;
+        }
         }
     }
 }

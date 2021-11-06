@@ -19,7 +19,7 @@
                                     <?php if ( has_post_thumbnail() ) : ?>
                                         <?php the_post_thumbnail(); ?>
                                     <?php else: ?>
-                                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/noimage.png" alt="noimage" class="p-card__noimage">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/noimage.png" alt="noimage">
                                     <?php endif; ?>
                                     <div class="p-card__body">
                                         <div class="p-card__block">

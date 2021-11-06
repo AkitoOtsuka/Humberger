@@ -46,7 +46,7 @@
         line-height: 2.3;
         position: relative;
         height: 518px;
-        overflow: scroll;
+        overflow-y: scroll;
         @include tab {
             height: 288px;
         }
@@ -55,6 +55,9 @@
             line-height: 2;
             width: 48.7%;
             height: 386px;
+        }
+        &::-webkit-scrollbar {
+            display: none;
         }
     }
 }
