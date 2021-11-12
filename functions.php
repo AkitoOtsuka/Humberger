@@ -9,7 +9,10 @@ function my_document_title_parts($title) {
     return $title;
 }
 
-add_theme_support('menus');
+register_nav_menus( array(
+    'categorymenu' => 'CategoryMenu',
+    'footermenu' => 'FooterMenu',
+));
 
 add_filter('document_title_parts', 'my_document_title_parts');
 
@@ -28,3 +31,6 @@ function add_gutenberg_editor_style() {
     wp_enqueue_style('block-editor-style', get_theme_file_uri('/css/editor-style.css'));
 }
 add_action('enqueue_block_editor_assets', 'add_gutenberg_editor_style');
+
+// テーマチェック 対応
+add_theme_support('automatic-feed-links');

@@ -15,6 +15,7 @@
                             </div>
                             <section class="l-main__single-inner-block">
                                 <?php the_content(); ?>
+                                <?php wp_link_pages(); ?><!-- テーマチェック 対応 -->
                             </section>
                         <?php endwhile; ?>
                     <?php endif; ?>
