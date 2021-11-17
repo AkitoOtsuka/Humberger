@@ -1,4 +1,4 @@
-        <?php get_header(); ?>   
+        <?php get_header(); ?>  
             <main class="l-main">
                 <article class="l-main__inner">
                     <?php if ( have_posts() ) : ?>

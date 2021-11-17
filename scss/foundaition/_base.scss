@@ -28,3 +28,36 @@ input {
 input[type="text"]:focus {
 	outline: 0;
 }
+/*=====テーマチェック 対応=====*/
+.wp-caption {
+	font-size: 1.3rem;
+}
+.wp-caption-text {
+	margin-top: -20px;
+}
+.sticky {
+	padding: 20px;
+	background-color: #f3f3f3;
+}
+.gallery-caption {
+	font-size: 1.3rem;
+}
+.bypostauthor {
+	padding: 20px;
+	background-color: #f0f8ff;
+}
+.alignleft {
+    float: left;
+  	margin-right: 20px;
+  	margin-bottom: 20px;
+}
+.alignright {
+	float: right;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

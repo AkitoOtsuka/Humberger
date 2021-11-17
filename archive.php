@@ -5,7 +5,7 @@
                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/archive-img01.png" alt="Menu" class="p-top__archive-img">
                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/archive-img01-pc.png" alt="Menu" class="p-top__archive-img-pc">
                         <h1 class="c-top-title c-top-title--archive p-top__title">Menu:<br>
-                            <span class="c-top-subtitle p-top__subtitle"><?php wp_title(''); ?></span>
+                            <span class="c-top-subtitle p-top__subtitle"><?php single_cat_title(); ?></span>
                         </h1>
                     </div>
                     <div class="l-main__archive-inner-block">

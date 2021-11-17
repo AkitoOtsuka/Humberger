@@ -27,6 +27,7 @@ add_action('wp_enqueue_scripts', 'add_files');
 
 add_theme_support('post-thumbnails');
 
+add_editor_style(); //テーマチェック 対応
 function add_gutenberg_editor_style() {
     wp_enqueue_style('block-editor-style', get_theme_file_uri('/css/editor-style.css'));
 }
@@ -34,3 +35,21 @@ add_action('enqueue_block_editor_assets', 'add_gutenberg_editor_style');
 
 // テーマチェック 対応
 add_theme_support('automatic-feed-links');
+
+add_theme_support('custom-header'); 
+
+add_theme_support('wp-block-styles');
+function remove_block_library_style() {
+	wp_dequeue_style('wp-block-library-theme');
+}
+add_action('wp_enqueue_scripts', 'remove_block_library_style');
+
+add_theme_support('custom-background');
+ 
+add_theme_support('responsive-embeds');
+
+add_theme_support('align-wide');
+
+add_theme_support('custom-logo');
+
+add_theme_support('html5', array('search-form', 'comment-form', 'comment-list', 'gallery', 'caption'));
