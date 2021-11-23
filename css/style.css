@@ -77,6 +77,11 @@ input[type="text"]:focus {
   margin-right: auto;
 }
 
+.my-button .wp-block-button__link {
+  -webkit-box-shadow: 0 5px #0009;
+          box-shadow: 0 5px #0009;
+}
+
 /*=====mediaquery=====*/
 .l-header {
   background-color: #FFF7EF;

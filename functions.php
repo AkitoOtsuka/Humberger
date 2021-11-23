@@ -53,3 +53,25 @@ add_theme_support('align-wide');
 add_theme_support('custom-logo');
 
 add_theme_support('html5', array('search-form', 'comment-form', 'comment-list', 'gallery', 'caption'));
+
+add_action('init', function() {
+    register_block_style(
+        'core/paragraph',
+        [
+            'name' => 'black-bg',
+            'label' => '黒背景',
+            'inline_style' => '.is-style-black-bg { 
+                background: #000;
+                color: #fff;
+            }',
+        ]
+    );
+});
+
+add_action('admin_init', function() {
+    $pattern = [
+      'title' => 'my-button',
+      'content' => '<!-- wp:buttons --><div class="wp-block-buttons"><!-- wp:button {"className":"my-button"} --><div class="wp-block-button my-button"><a class="wp-block-button__link">オリジナルボタン</a></div><!-- /wp:button --></div><!-- /wp:buttons -->',
+    ];
+    register_block_pattern($pattern['title'], $pattern);
+});  

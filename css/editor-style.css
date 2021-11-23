@@ -419,3 +419,7 @@ a {
     font-size: 1.6rem;
     font-style: italic;
   }
+  /* テーマチェック 対応 */
+  .my-button .wp-block-button__link {
+    box-shadow: 0 5px #0009;
+  }

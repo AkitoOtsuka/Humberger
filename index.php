@@ -3,7 +3,7 @@
                 <div class="l-main__inner">
                     <div class="p-top">
                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/front-img01.png" alt="ダミーサイト" class="p-top__img">
-                        <h2 class="c-top-title p-top__title">ダミーサイト</h2>
+                        <h2 class="c-top-title p-top__title"><?php echo __('dummysite', 'hamburger'); ?></h2><!-- テーマチェック 対応 -->
                     </div>
                     <div class="l-main__inner-block">
                         <section class="p-service">
