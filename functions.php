@@ -20,7 +20,7 @@ function add_files() {
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400&family=Roboto:wght@700&display=swap' );
     wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.6.1/css/all.css' );
     wp_enqueue_style('ress', 'https://unpkg.com/ress/dist/ress.min.css' );
-    wp_enqueue_style('hamberger-style', get_template_directory_uri() . '/css/style.css', array('ress') );
+    wp_enqueue_style('hamberger-style', get_template_directory_uri() . '/css/style.css', array('ress') , filemtime(get_theme_file_path('/css/style.css')));
     wp_enqueue_script('hamburger-script', get_template_directory_uri() . '/scripts/script.js', array('jquery'), '20210326', true );
 }
 add_action('wp_enqueue_scripts', 'add_files');

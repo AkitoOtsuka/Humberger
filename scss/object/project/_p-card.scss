@@ -26,6 +26,7 @@
         padding-left: 5%;
         @include tab {
             padding-left: 9.1%;
+            overflow-y: scroll;
         }
         h2 {
             font-size: 1.6rem;
@@ -38,10 +39,15 @@
             padding-right: 21.7%;
             @include tab {
                 padding-right: 15.6%;
+                max-height: 60px;
             }
             @include pc {
                 margin-top: 1.7rem;
+                max-height: 40px
             }
+        }
+        &::-webkit-scrollbar {
+            display: none;
         }
     }
     &__title {
