@@ -1412,6 +1412,11 @@ input[type="text"]:focus {
   }
 }
 
+.p-card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media (min-width: 600px) {
   .p-card img {
     width: 50%;
@@ -1436,7 +1441,6 @@ input[type="text"]:focus {
 @media (min-width: 600px) {
   .p-card__block {
     padding-left: 9.1%;
-    overflow-y: scroll;
   }
 }
 
@@ -1458,19 +1462,13 @@ input[type="text"]:focus {
 @media (min-width: 600px) {
   .p-card__block p {
     padding-right: 15.6%;
-    max-height: 60px;
   }
 }
 
 @media (min-width: 1024px) {
   .p-card__block p {
     margin-top: 1.7rem;
-    max-height: 40px;
   }
-}
-
-.p-card__block::-webkit-scrollbar {
-  display: none;
 }
 
 .p-card__title {
